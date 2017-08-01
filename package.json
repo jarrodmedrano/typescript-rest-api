@@ -1,0 +1,21 @@
+{
+  "name": "typescript-apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "pg": "^7.0.2",
+    "sequelize": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/sequelize": "^4.0.67",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/ts-node ./server/server.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}
