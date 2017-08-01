@@ -1,6 +1,18 @@
 
 import {findAllCourses} from './queries/findAllCourses';
+import * as express from 'express';
 
-findAllCourses().then(results => console.log(JSON.stringify(results)));
+const app = express();
 
-console.log('Server is running...');
+app.route('/api/courses').get((req, res) => {
+
+    findAllCourses()
+        .then(results => {
+            res.status(200).json(results)
+    });
+
+});
+
+app.listen(8090, () => {
+    console.log('server is running...');
+});

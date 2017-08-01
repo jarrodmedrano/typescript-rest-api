@@ -5,3 +5,4 @@ export function findAllCourses() {
     order: ['seqNo']
     })
 }
+
