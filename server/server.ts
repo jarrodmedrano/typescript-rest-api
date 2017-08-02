@@ -8,6 +8,9 @@ const app: Application = express();
 
 initRestApi(app);
 
+app.use((err, req, res) => {
+    console.log('middleware executed');
+});
 
 app.listen(8090, () => {
     console.log('server is running on port 8090...');

@@ -7,5 +7,9 @@ export function apiGetAllCourses(req:Request, res:Response) {
             .then(results => {
                 res.status(200).json({results})
         });
+            
+        //throw new Error('Error occured');
+        
+        
 
 }
