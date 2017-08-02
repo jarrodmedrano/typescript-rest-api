@@ -11,6 +11,6 @@ export function apiGetCourseDetail(req:Request, res:Response) {
 
         findCourseDetail(courseId) 
             .then(_.partial(onSuccess, res))
-            .catch(_.partial(onError, res, "Find all courses failed"));
+            .catch(_.partial(onError, res, "Could not find course for id"));
 
 }
